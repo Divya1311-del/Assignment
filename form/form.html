@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding:20px;
+            margin:20px;
+        }
+        .formdesign{
+            padding:10px;
+        }
+        .formdesign input{
+            padding:5px;
+            border-radius: 3px;
+            border:2px solid black;
+        }
+        .formdesign select{
+            padding:5px;
+            border-radius: 3px;
+            border:2px solid black;
+            width:173px;
+        }
+        #birthday{
+            width:158px;
+        }
+        .button{
+            border:2px solid black;
+            border-radius: 6px;
+            height:30px;
+            width:60px;   
+            margin:10px;
+        }
+        .formbutton{
+            padding:10px;
+            
+            margin:20px;
+        }
+    </style>
+</head>
+<body style="background-color:rgb(80, 249, 255);">
+    <form name="studentForm" onsubmit="getValue()" method="post">
+    <div class="formdesign">First Name&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" id="firstname" name="firstname" required=""></div>
+    <div class="formdesign">Last Name&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" id="lastname" required=""></div>
+    <div class="formdesign">Date Of Birth
+    <input type="date" id="birthday" name="birthday" required="" ></div>
+    <div class="formdesign">Country&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <select id="country" required >
+        <option value="">None</option>
+        <option value="Afghanistan">Afghanistan</option>
+        <option value="Belgium">Belgium</option>
+        <option value="China">China</option>
+        <option value="Denmark">Denmark</option>
+        <option value="Egypt">Egypt</option>
+        <option value="France">France</option>
+        <option value="Germany">Germany</option>
+        <option value="India">India</option>
+        <option value="Iran">Iran</option>
+        <option value="Japan">Japan</option>
+        <option value="Nepal">Nepal</option>
+        <option value="Poland">Poland</option>
+    </select></div>
+    <div class="formdesign">Profession&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" id="profession" required=""></div>
+    <div class="formdesign">Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="Email" id="Email" required="" ></div>
+    <div class="formdesign"> Mobile &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required=""></div>
+    <div class="formdesign">Gender&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="checkbox" id="gender_male" value="male"  name="gender" class="gender">Male
+    <input type="checkbox" id="gender_female" value="female" name="gender" class="gender">Female</div> 
+    <div class=formbutton><input type="reset" class="button">
+    <input type="submit" value="Submit" onclick="myFunction()" class="button">
+    </form><h4 id="disp"></h4>
+    <script src="script.js"></script>
+</body>
+</html>

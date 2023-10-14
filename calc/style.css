@@ -1,0 +1,68 @@
+.total{
+    background-color: rgba(153, 86, 86, 0.132);
+    padding:150px 150px;
+    height:430px;
+    width:396px;
+}
+
+.container{
+    background-color:rgb(221, 201, 201);
+    height:410px;
+    width:300px;
+    padding:0px;
+    margin:0;
+    justify-content: center;
+    
+}
+
+.row{
+    background-color: black;
+    display: flex;
+}
+.button{
+    background-color: black;
+    color: aliceblue;
+    height:70px;
+    width:76px;
+    font-size: 25px;
+    font-weight: bold;
+    border:none;
+}
+#side{
+    background-color: rgba(250, 235, 215, 0.6);
+    width:70px;
+    padding:0px;
+    border:none;
+    
+}
+#top{
+    background-color: rgba(250, 235, 215, 0.6);
+    border:none;
+    padding:0px;
+    display: block;
+    height:70px;
+    width:114px;
+
+}
+
+.half input{
+    height:55px;
+    width:292px;
+    background-color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#right{
+    border:none;
+    color:white;
+    font-weight: bold;
+    background-color: rgb(84, 237, 176);
+    height:70px;
+    width:70px;
+    
+}
+#special{
+    height:70px;
+    width:114px;
+}
